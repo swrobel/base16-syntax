@@ -52,10 +52,11 @@ class Base16
     """
     @base16-scheme: '#{@getNormalizedName scheme}';
     @base16-style: '#{@getNormalizedName style}';
-    
+
     @import 'schemes/@{base16-scheme}';
     @import 'syntax-variables-@{base16-style}';
-    
+    @import 'cursors';
+
     """
 
   getNormalizedName: (name) ->
